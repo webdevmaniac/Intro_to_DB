@@ -15,6 +15,9 @@ def create_database(host_name, db_user, db_password, db_name):
         # Create the database if it doesn't exist
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {db_name}")
 
+        # Commit the changes
+        connection.commit()
+
         # Print a success message
         print(f"Database '{db_name}' created successfully!")
 
