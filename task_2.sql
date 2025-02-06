@@ -6,7 +6,7 @@ USE alx_book_store;
 
 -- Create the writers table (instead of "authors")
 CREATE TABLE IF NOT EXISTS Authors (
-    writer_id INT AUTO_INCREMENT PRIMARY KEY,
+    author_id INT AUTO_INCREMENT PRIMARY KEY,
     author_name VARCHAR(100) NOT NULL,  -- Use "name" instead of "author_name"
     country VARCHAR(50)
 );
