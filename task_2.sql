@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Orders (
   customer_id INT,
   order_date DATE NOT NULL,
   total_amount DECIMAL(10, 2) NOT NULL,
-  FOREIGN KEY (customer_id) REFERENCES Customers (customer_id)
+  FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 -- Create the order_details table
