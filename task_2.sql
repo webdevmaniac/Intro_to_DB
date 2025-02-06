@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS Books (
 -- Create the customers table
 CREATE TABLE IF NOT EXISTS Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
+    customer_name VARCHAR(215) NOT NULL,
+    email VARCHAR(215) UNIQUE NOT NULL,
     address VARCHAR(200),
     phone VARCHAR(15)
 );
